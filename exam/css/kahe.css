@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image:url(../karpagam.jpg) ;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+.loginbox {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 120px;
+    justify-items: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 6px;
+    margin-left: 20%;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    transition: background-color 0.3s ease;
+}
+.button-1 {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 15px 30px; /* Padding for the button */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.bottomfooter {
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+
+.scroll-top {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .loginbox {
+        width: 90%;
+        margin-bottom: 50px; 
+    }
+}
+
+label {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin:5px 0 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} 
+.themeClr{
+    color: black;
+    transition: color 0.3s ease;
+    padding-left: 50%;
+}
+
+.center {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+    flex: 1;
+}
+
+/* Style for select dropdown */
+.dd {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Center the login box */
+.lo {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.hero {
+    position: absolute;
+    top: 2%;
+    left: 10px;
+    border-radius: 30px;
+    border-style: none;
+    width: 220px;
+    height: 90px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Smooth round edges */
+}

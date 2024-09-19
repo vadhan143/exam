@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/kce.css">
+</head>
+<body>
+    <img src="ki.png" alt="" class="hero">
+    <div class="login-container">
+        <h2>EXAM CELL</h2>
+        <form id="login-form">
+            <label for="batch">Batch</label>
+            <select id="batch">
+                <option value="">Select Batch</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+
+            <label for="department">Department</label>
+            <select id="department" onchange="handleDepartmentChange()">
+                <option value="">Select Department</option>
+                <option value="CSE">Computer Science</option>
+                <option value="ECE">Electronics Communication</option>
+                <option value="ME">Mechanical</option>
+                <option value="FT">Food Tech</option>
+            </select>
+            
+                <label for="semester">Semester</label>
+                <select id="semester">
+                    <option value="">Select Semester</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                </select>
+            
+
+            <label for="course">Course</label>
+            <select id="course" >
+                <option value="">Select Course</option>
+                <option value="DS">Data Structures</option>
+                <option value="DBMS">Database Management Systems</option>
+                <option value="OS">Operating Systems</option>
+            </select>
+            <label for="course-code">Course Code</label>
+            <input type="text" id="course-code" placeholder="e.g., CSE101">
+
+            </select>
+            <label for="course">Name of the Exam</label>
+            <select id="course" >
+                <option value="">Select Exam</option>
+                <option value="cia1">CIA 1</option>
+                <option value="cia2">CIA 2</option>
+            </select>
+            <label for="examiner">Name of the Examiner</label>
+            <select id="examiner" onchange="handleExaminerChange()">
+                <option value="">Select Examiner</option>
+                <option value="Prof.ashwin">Prof. Ashwin</option>
+                <option value="Prof.hari">Prof. Hari</option>
+                <option value="Prof.gokul">Prof. Gokul</option>
+            </select>
+
+            <label for="Date of Valuation">Date of Valuation</label>
+            <input type="date">
+
+            <button type="submit" id="btn-1">Next</button>
+        </form>
+    </div>
+
+<style>
+
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    background-image: url("karpagam.jpg");
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#btn-1 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn-1:hover {
+    background-color: #0056b3;
+}
+.hero{
+    position: absolute;
+    top: 2%;
+    left: 10px;
+    border-radius: 30px;
+    border-style: none;
+    width: 250px;
+    height: 150px;
+}
+
+
+
+.btn{
+    width: 20%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+</style>
+ <script src="script.js">
+
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    alert('Form submitted successfully!');
+});
+
+
+var magic = document.getElementById("magic")
+
+function add(){
+    magic.style.display="none"
+}
+</script>
+</body>
+</html>
